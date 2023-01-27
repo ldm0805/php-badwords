@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ="stylesheet" href="./css/style.css">
-        <title>Document</title>
+        <title>Primo eserecizio php</title>
 </head>
     <body>
-
-        <form action="./pcensored.php" method="GET">
-            <input type="text" name="paragraph" id="paragraph"
-            placeholder="paragraph">
-            <input type="text" name="censored" id="censored"
-            placeholder="censored">
-            <button type="submit">Invia</button>
-        </form>
+        <div class="center">
+            <h3>Inserisci una frase ed una parola da censurare:</h3>
+            <form action="./pcensored.php" method="GET">
+                <input type="text" name="paragraph" id="paragraph"
+                placeholder="paragraph">
+                <input type="text" name="censored" id="censored"
+                placeholder="censored">
+                <button type="submit">Invia</button>
+            </form>
+        </div>
     </body>
 </html>
