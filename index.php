@@ -11,7 +11,8 @@
     <body>
         <div class="center">
             <h3>Inserisci una frase ed una parola da censurare:</h3>
-            <form action="./pcensored.php" method="GET">
+            <!-- Recupero dei dati nella form tramite il medoto POST -->
+            <form action="./pcensored.php" method="POST">
                 <input type="text" name="paragraph" id="paragraph"
                 placeholder="paragraph">
                 <input type="text" name="censored" id="censored"

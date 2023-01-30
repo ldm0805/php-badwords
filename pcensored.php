@@ -1,11 +1,8 @@
+<!-- Recupero dei dati ed assegnazioni alle variabili -->
 <?php
-$paragraph = $_GET['paragraph'];
-$censored = $_GET['censored'];
+$paragraph = $_POST['paragraph'];
+$censored = $_POST['censored'];
 $censored_string = str_replace($censored,'***', $paragraph);
-// echo $paragraph;
-// echo strlen($paragraph);
-// echo $censored_string;
-// echo strlen($censored_string);
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +21,7 @@ $censored_string = str_replace($censored,'***', $paragraph);
                 <h1>
                     La tua frase è:
                 </h1>
+                <!-- Paragrafo non censurato -->
                 <h1>
                     <?php echo $paragraph."<br> La tua frase è lunga: ".strlen($paragraph)." caratteri.";?>
                 </h1>
@@ -32,6 +30,7 @@ $censored_string = str_replace($censored,'***', $paragraph);
                 <h1>
                     La tua frase censurata è:
                 </h1>
+                <!-- Paragrafo censurato -->
                 <h1>
                     <?php echo $censored_string."<br> La tua frase censurata è lunga: ".strlen($censored_string)." caratteri.";?>
                 </h1>
